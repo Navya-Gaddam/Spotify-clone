@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+:root{
+  --black:#000;
+  --grey:#121212;
+  --lightgrey:#232323;
+  --white:#fff;
+  --lightestgrey:rgb(48,48,48,1);
+}
+
+.main-container::-webkit-scrollbar{
+  display: none;
+}
+
+html,body{
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'nunito',sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.container{
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background-color: var(--black);
+  padding: 0.5rem;
+}
+
+.side-bar-container{
+  flex: 0.2;
+  width: 10px;
+  background-color: var(--black);
+}
+
+.main-container{
+  flex: 0.8;
+  background-color:var(--lightgrey);
+  overflow-y: auto;
+  top: 0;
+  padding: 25px;
+  padding-top: 0px;
+  margin: 0px;
+}
+
+.player{
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: var(--grey);
+  bottom: 0;
+  left: 0;
+}
+
+.side-bar-section1,.side-bar-section2,.side-bar-section3,.side-bar-section4{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.side-bar-links img{
+  height: 27.12px;
+  width: 26.65px;
+}
+
+.side-bar-links{
+  display: flex;
+  justify-content: flex-start;
+  gap:1rem;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.side-bar-section1{
+  width: 347px;
+  height: 110px;
+}
+
+.side-bar-section2{
+  width: 209px;
+  height: 110px;
+}
+
+.side-bar-section3{
+  width: 213px;
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+  padding: 1rem 0rem;
+  align-items: center;
+  background-color: var(--lightgrey);
+  z-index: 1000;
+}
+
+.good-morning-cards-link{
+    width: 300px;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    gap:1rem;
+    background-color: var(--lightestgrey);
+    border-radius: 4px;
+}
+
+.good-morning-cards-link img{
+  height: 100%;
+}
+
+.good-morning-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.shows-container-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shows-container-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 25px;
+}
+
+.card{
+  width: 210px;
+  background-color: var(--lightestgrey);
+  padding: 0.75rem;
+  height: 250px;
+  margin: 0rem 0.75rem;
+  cursor: pointer;
+}
+
+.card img{
+  height: 190px;
+  width: 200px;
+  border-radius:10px;
+}
+
+
+.card-title{
+  margin: 0.25rem 0;
+}
+
+.card-sub{
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.player-start{
+  width: 30vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-end {
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.player-center{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-controls{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.timeline-slider{
+  margin: 0 10px;
+  width: 30vw;
+}
+
+.volume-slider{
+  width: 100px;
+  height: 2px;
+}
+
+.timeline-slider,
+.volume-slider{
+  -webkit-appearance: none;
+}
+
+.timeline-slider:hover,
+.volume-slider:hover{
+  background-color: #1bd760;
+}
+
+.timeline-slider::-webkit-slider-runnable-track,
+.volume-slider::-webkit-slider-runnable-track{
+  height: 4px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 100px;
+}
+
+.timeline-slider::-webkit-slider-thumb,
+.volume-slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #1bd760;
+  margin-top: -6px;
+}
+
+.timeline-slider:focus,.volume-slider:focus{
+  outline: none;
+}
+
+.timeline-slider:focus::-webkit-slider-runnable-track{
+  background-color: #ccc;
+}
+
+
